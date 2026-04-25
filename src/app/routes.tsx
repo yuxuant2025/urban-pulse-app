@@ -11,6 +11,7 @@ import CityInbox from "./screens/CityInbox";
 import CityEmail from "./screens/CityEmail";
 import Profile from "./screens/Profile";
 import MapScreen from "./screens/Map";
+import Chat from "./screens/Chat";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
       { path: "inbox/:id", Component: CityEmail },
       { path: "profile", Component: Profile },
       { path: "map", Component: MapScreen },
+      { path: "chat", Component: Chat },
     ],
   },
 ]);

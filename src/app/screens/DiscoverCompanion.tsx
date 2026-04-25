@@ -40,112 +40,112 @@ interface DetailedPlace {
 const detailedPlaces: Record<string, DetailedPlace> = {
   '4': {
     id: '4',
-    name: 'The Botanical Gardens',
+    name: 'The High Line',
     mood: 'Feels playful today',
-    personality: 'The gentle giant',
-    description: 'A sprawling sanctuary of ancient trees and quiet corners. It breathes slowly and deeply.',
-    colorFrom: 'from-pink-300',
-    colorTo: 'to-rose-100',
-    shadow: 'shadow-pink-200',
-    age: '142 years',
-    hobby: 'Watching clouds & collecting fallen leaves',
+    personality: 'The playful spirit',
+    description: 'An old rail line reborn as a garden in the sky. It winds above the West Side, surprising you at every turn with unexpected beauty.',
+    colorFrom: 'from-rose-300',
+    colorTo: 'to-orange-100',
+    shadow: 'shadow-rose-200',
+    age: '15 years',
+    hobby: 'Watching sunsets & surprising visitors with secret gardens',
     petPreference: 'Both',
-    friendCount: 12450,
+    friendCount: 18450,
     seasonalActivities: [
-      { icon: Leaf, label: 'Spring Blooms' },
-      { icon: Sun, label: 'Summer Picnics' }
+      { icon: Leaf, label: 'Spring Wildflowers' },
+      { icon: Sun, label: 'Summer Strolls' }
     ],
     recommendations: [
-      { id: '7', name: 'River Walk', color: 'bg-blue-200' },
-      { id: '8', name: 'City Square', color: 'bg-emerald-200' }
+      { id: '7', name: 'Chelsea Market', color: 'bg-orange-200' },
+      { id: '8', name: 'Grand Central Terminal', color: 'bg-sky-200' }
     ]
   },
   '5': {
     id: '5',
-    name: 'Midnight Cafe',
+    name: 'Caffe Dante',
     mood: 'A little restless tonight',
     personality: 'The energetic heart',
-    description: 'A warm glow in the dark streets. It thrives on quiet conversations and the smell of roasted beans.',
+    description: 'A West Village institution glowing golden past midnight. It thrives on lingering conversations, negronis, and the smell of espresso.',
     colorFrom: 'from-amber-300',
     colorTo: 'to-yellow-100',
     shadow: 'shadow-amber-200',
-    age: '12 years',
-    hobby: 'Eavesdropping on dates & smelling coffee',
+    age: '110 years',
+    hobby: 'Eavesdropping on first dates & perfecting the negroni',
     petPreference: 'Cat',
-    friendCount: 3820,
+    friendCount: 5820,
     seasonalActivities: [
       { icon: Coffee, label: 'Winter Warmth' },
-      { icon: Sparkles, label: 'Autumn Jazz' }
+      { icon: Sparkles, label: 'Autumn Jazz Nights' }
     ],
     recommendations: [
-      { id: '6', name: 'Old Bookstore', color: 'bg-purple-200' },
-      { id: '8', name: 'City Square', color: 'bg-emerald-200' }
+      { id: '6', name: 'Washington Square Park', color: 'bg-violet-200' },
+      { id: '8', name: 'Grand Central Terminal', color: 'bg-sky-200' }
     ]
   },
   '6': {
     id: '6',
-    name: 'Old Bookstore',
-    mood: 'Quiet and open',
-    personality: 'The wise elder',
-    description: 'A hushed temple of stories. It hums with the soft sound of turning pages.',
-    colorFrom: 'from-purple-300',
-    colorTo: 'to-indigo-100',
-    shadow: 'shadow-purple-200',
-    age: '68 years',
-    hobby: 'Hoarding secrets & smelling like vanilla',
-    petPreference: 'Cat',
-    friendCount: 1840,
+    name: 'Washington Square Park',
+    mood: 'Lively and open',
+    personality: 'The energetic heart',
+    description: 'The beating heart of Greenwich Village, where NYU students, chess players, and street performers share the same sun-dappled ground.',
+    colorFrom: 'from-violet-300',
+    colorTo: 'to-purple-100',
+    shadow: 'shadow-violet-200',
+    age: '190 years',
+    hobby: 'Hosting impromptu concerts & watching chess grandmasters',
+    petPreference: 'Both',
+    friendCount: 22840,
     seasonalActivities: [
-      { icon: BookOpen, label: 'Rainy Day Reading' },
-      { icon: Sparkles, label: 'Winter Poetry' }
+      { icon: Sun, label: 'Summer Performances' },
+      { icon: Sparkles, label: 'Winter Arch Lights' }
     ],
     recommendations: [
-      { id: '5', name: 'Midnight Cafe', color: 'bg-amber-200' },
-      { id: '4', name: 'The Botanical Gardens', color: 'bg-pink-200' }
+      { id: '5', name: 'Caffe Dante', color: 'bg-amber-200' },
+      { id: '4', name: 'The High Line', color: 'bg-rose-200' }
     ]
   },
   '7': {
     id: '7',
-    name: 'River Walk',
-    mood: 'Drifting and calm',
-    personality: 'The quiet observer',
-    description: 'Stretching out into the city, it watches the tides come and go with melancholic patience.',
-    colorFrom: 'from-blue-300',
-    colorTo: 'to-cyan-100',
-    shadow: 'shadow-blue-200',
-    age: '110 years',
-    hobby: 'Reflecting city lights & listening to ducks',
+    name: 'Chelsea Market',
+    mood: 'Warm and inviting',
+    personality: 'The gentle giant',
+    description: 'A former factory reborn as a food hall and creative hub. Its brick corridors hold the memory of a hundred years of labor and the smell of fresh bread.',
+    colorFrom: 'from-orange-300',
+    colorTo: 'to-amber-100',
+    shadow: 'shadow-orange-200',
+    age: '100 years',
+    hobby: 'Collecting the smells of 35 different kitchens',
     petPreference: 'Dog',
-    friendCount: 8900,
+    friendCount: 9200,
     seasonalActivities: [
-      { icon: Waves, label: 'Summer Breezes' },
-      { icon: Sun, label: 'Spring Sunsets' }
+      { icon: Waves, label: 'Weekend Food Markets' },
+      { icon: BookOpen, label: 'Artisan Pop-ups' }
     ],
     recommendations: [
-      { id: '4', name: 'The Botanical Gardens', color: 'bg-pink-200' },
-      { id: '8', name: 'City Square', color: 'bg-emerald-200' }
+      { id: '4', name: 'The High Line', color: 'bg-rose-200' },
+      { id: '8', name: 'Grand Central Terminal', color: 'bg-sky-200' }
     ]
   },
   '8': {
     id: '8',
-    name: 'City Square',
-    mood: 'Grounded and steady',
-    personality: 'The playful spirit',
-    description: 'The pulsing heart of the town, always awake and always welcoming to strangers.',
-    colorFrom: 'from-emerald-300',
-    colorTo: 'to-teal-100',
-    shadow: 'shadow-emerald-200',
-    age: '205 years',
-    hobby: 'People watching & listening to buskers',
-    petPreference: 'Both',
-    friendCount: 45200,
+    name: 'Grand Central Terminal',
+    mood: 'Steady and magnificent',
+    personality: 'The wise elder',
+    description: 'A cathedral of commuters, where 750,000 people pass through its marble halls each day. It has witnessed a century of hellos and goodbyes.',
+    colorFrom: 'from-sky-300',
+    colorTo: 'to-blue-100',
+    shadow: 'shadow-sky-200',
+    age: '112 years',
+    hobby: 'Listening to whispered conversations in the whispering gallery',
+    petPreference: 'None',
+    friendCount: 52000,
     seasonalActivities: [
-      { icon: Sparkles, label: 'Winter Markets' },
-      { icon: Sun, label: 'Summer Festivals' }
+      { icon: Sparkles, label: 'Holiday Train Show' },
+      { icon: Sun, label: 'Summer Stargazing Ceiling' }
     ],
     recommendations: [
-      { id: '7', name: 'River Walk', color: 'bg-blue-200' },
-      { id: '5', name: 'Midnight Cafe', color: 'bg-amber-200' }
+      { id: '6', name: 'Washington Square Park', color: 'bg-violet-200' },
+      { id: '5', name: 'Caffe Dante', color: 'bg-amber-200' }
     ]
   }
 };

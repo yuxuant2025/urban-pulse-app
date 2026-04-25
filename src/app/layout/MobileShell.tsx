@@ -1,5 +1,5 @@
 import { Outlet, useLocation, useNavigate } from 'react-router';
-import { Home, Compass, Scan, User } from 'lucide-react';
+import { Home, Compass, MessageCircle, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -18,7 +18,7 @@ export default function MobileShell() {
   const navItems = [
     { icon: Home, path: '/home', label: 'Home' },
     { icon: Compass, path: '/discover', label: 'Explore' },
-    { icon: Scan, path: '/map', label: 'AR' },
+    { icon: MessageCircle, path: '/chat', label: 'Chat' },
     { icon: User, path: '/profile', label: 'Me' },
   ];
 

@@ -45,12 +45,13 @@ export interface Place {
   chatHistory: ChatMessage[];
   lastVisited: string;
   description: string;
+  petFriendly?: boolean;
 }
 
 export const myPlaces: Place[] = [
   {
     id: '1',
-    name: 'Beacon Hill Park',
+    name: 'Bryant Park',
     type: 'Park',
     mood: 'peaceful',
     personality: 'The gentle giant',
@@ -60,7 +61,7 @@ export const myPlaces: Place[] = [
       to: 'to-teal-100',
       shadow: 'shadow-emerald-200',
     },
-    memories: ['A quiet morning walk in autumn', 'Watching the ducks by the pond'],
+    memories: ['A quiet morning surrounded by skyscrapers', 'Reading on the lawn at golden hour'],
     capsules: [
       { id: 'c1', type: 'text', text: 'The cherry blossoms are finally blooming. It feels like waking up.', date: 'May 12', author: { id: 'u1', name: 'Elena', avatar: 'https://images.unsplash.com/photo-1603775493298-e06a5f21e46c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBzbWlsaW5nJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzc1NjM4OTk2fDA&ixlib=rb-4.1.0&q=80&w=1080', isFriend: false }, color: 'bg-emerald-50' },
       { id: 'c2', type: 'photo', text: 'Sat here reading for 3 hours. Best afternoon in weeks.', mediaUrl: 'https://images.unsplash.com/photo-1720815369506-2bc13b1f837e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHJlYWRpbmclMjBwYXJrfGVufDF8fHx8MTc3NTY5ODIyMHww&ixlib=rb-4.1.0&q=80&w=1080', date: 'May 11', author: { id: 'u0', name: 'You', isFriend: true }, color: 'bg-teal-50' },
@@ -77,11 +78,11 @@ export const myPlaces: Place[] = [
       },
     ],
     lastVisited: '2 days ago',
-    description: 'A sprawling sanctuary of ancient trees and quiet corners. It breathes slowly and deeply.',
+    description: 'A sunlit refuge behind the library, ringed by Midtown towers but somehow always peaceful. It breathes slowly and deeply.',
   },
   {
     id: '2',
-    name: 'Central Library',
+    name: 'New York Public Library',
     type: 'Library',
     mood: 'quiet',
     personality: 'The wise elder',
@@ -100,15 +101,15 @@ export const myPlaces: Place[] = [
       { id: 'm4', sender: 'place', text: 'Hush now... the books are sleeping. Welcome back.', time: '09:15' },
     ],
     lastVisited: '1 week ago',
-    description: 'A hushed temple of stories. It hums with the soft sound of turning pages.',
+    description: 'Two stone lions guard a million stories on Fifth Avenue. It hums with whispered ambitions and the soft rustle of turning pages.',
   },
   {
     id: '3',
-    name: 'Old Town Pier',
+    name: 'Brooklyn Bridge Park',
     type: 'Waterfront',
     mood: 'misses you',
     personality: 'The quiet observer',
-    relationshipLevel: 40,
+    relationshipLevel: 15,
     color: {
       from: 'from-blue-300',
       to: 'to-cyan-100',
@@ -118,15 +119,15 @@ export const myPlaces: Place[] = [
     capsules: [],
     chatHistory: [],
     lastVisited: '3 weeks ago',
-    description: 'Stretching out into the sea, it watches the tides come and go with melancholic patience.',
+    description: 'Stretching along the East River with its eyes fixed on the Manhattan skyline, watching the city shimmer with patient longing.',
   },
 ];
 
 export const discoverPlaces: Place[] = [
   {
     id: '4',
-    name: 'The Botanical Gardens',
-    type: 'Garden',
+    name: 'The High Line',
+    type: 'Park',
     mood: 'calm',
     personality: 'The playful spirit',
     relationshipLevel: 0,
@@ -139,11 +140,11 @@ export const discoverPlaces: Place[] = [
     capsules: [],
     chatHistory: [],
     lastVisited: 'Never',
-    description: 'A vibrant burst of color and life. It dances gently in the breeze, eager to show you its blooms.',
+    description: 'An old rail line reborn as a garden in the sky. It winds above the West Side, surprising you at every turn with unexpected beauty.',
   },
   {
     id: '5',
-    name: 'Midnight Cafe',
+    name: 'Caffe Dante',
     type: 'Cafe',
     mood: 'lonely',
     personality: 'The energetic heart',
@@ -157,6 +158,6 @@ export const discoverPlaces: Place[] = [
     capsules: [],
     chatHistory: [],
     lastVisited: 'Never',
-    description: 'A warm glow in the dark streets. It thrives on quiet conversations and the smell of roasted beans.',
+    description: 'A West Village institution glowing golden past midnight. It thrives on lingering conversations, negronis, and the smell of espresso.',
   }
 ];

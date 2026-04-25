@@ -1,14 +1,15 @@
 import { useParams, useNavigate } from 'react-router';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import { ChevronLeft, Wind, MessageSquareHeart, MapPin, Feather, Clock } from 'lucide-react';
-import { myPlaces } from '../data';
-import { PlaceAvatar } from '../components/Avatar';
+import { PlaceAvatar, getBondStage, stageLabels } from '../components/Avatar';
+import { usePlace } from '../hooks/usePlaces';
 
 export default function PlaceCompanion() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const place = myPlaces.find(p => p.id === id);
+  const { place, loading } = usePlace(id!);
 
+  if (loading) return null;
   if (!place) {
     return <div className="p-8 text-center text-stone-500">Companion not found.</div>;
   }
@@ -54,6 +55,7 @@ export default function PlaceCompanion() {
             colorTo={place.color.to}
             shadow={place.color.shadow}
             mood={place.mood}
+            relationshipLevel={place.relationshipLevel}
             size="hero"
           />
         </motion.div>
@@ -118,7 +120,12 @@ export default function PlaceCompanion() {
           className="bg-white/40 backdrop-blur-xl rounded-[2rem] p-6 border border-white/50 shadow-sm mb-6"
         >
           <div className="flex justify-between items-end mb-4 text-stone-600">
-            <span className="text-sm font-medium">Bond</span>
+            <div className="flex items-center space-x-2">
+              <span className="text-sm font-medium">Bond</span>
+              <span className="text-xs px-2 py-0.5 bg-white/50 rounded-full border border-stone-200/60 font-medium tracking-wide">
+                {stageLabels[getBondStage(place.relationshipLevel)]}
+              </span>
+            </div>
             <span className="text-xs font-mono">{place.relationshipLevel}%</span>
           </div>
           <div className="h-2 w-full bg-stone-200/50 rounded-full overflow-hidden">
