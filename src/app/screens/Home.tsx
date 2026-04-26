@@ -124,6 +124,7 @@ export default function Home() {
                   colorTo={place.color.to}
                   shadow={place.color.shadow}
                   mood={place.mood}
+                  personality={place.personality}
                   relationshipLevel={place.relationshipLevel}
                   size="lg"
                 />

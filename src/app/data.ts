@@ -57,9 +57,9 @@ export const myPlaces: Place[] = [
     personality: 'The gentle giant',
     relationshipLevel: 65,
     color: {
-      from: 'from-emerald-300',
-      to: 'to-teal-100',
-      shadow: 'shadow-emerald-200',
+      from: 'from-emerald-400',
+      to: 'to-green-100',
+      shadow: 'shadow-emerald-300',
     },
     memories: ['A quiet morning surrounded by skyscrapers', 'Reading on the lawn at golden hour'],
     capsules: [
@@ -88,9 +88,9 @@ export const myPlaces: Place[] = [
     personality: 'The wise elder',
     relationshipLevel: 82,
     color: {
-      from: 'from-indigo-300',
-      to: 'to-purple-100',
-      shadow: 'shadow-indigo-200',
+      from: 'from-yellow-400',
+      to: 'to-amber-100',
+      shadow: 'shadow-yellow-300',
     },
     memories: ['Sheltering from the rain', 'Getting lost in a novel for hours'],
     capsules: [
@@ -132,9 +132,9 @@ export const discoverPlaces: Place[] = [
     personality: 'The playful spirit',
     relationshipLevel: 0,
     color: {
-      from: 'from-rose-300',
-      to: 'to-orange-100',
-      shadow: 'shadow-rose-200',
+      from: 'from-emerald-400',
+      to: 'to-green-100',
+      shadow: 'shadow-emerald-300',
     },
     memories: [],
     capsules: [],

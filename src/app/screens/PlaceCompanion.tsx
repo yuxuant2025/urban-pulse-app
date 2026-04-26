@@ -55,6 +55,7 @@ export default function PlaceCompanion() {
             colorTo={place.color.to}
             shadow={place.color.shadow}
             mood={place.mood}
+            personality={place.personality}
             relationshipLevel={place.relationshipLevel}
             size="hero"
           />
